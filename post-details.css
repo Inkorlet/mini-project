@@ -1,0 +1,43 @@
+body{
+    background-color: antiquewhite;
+}
+.divPost{
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 20px;
+    background: linear-gradient(to bottom left, #fcd4fc 0%, #54acff 100%);
+}
+span{
+    font-weight: bold;
+    font-size: 21px;
+}
+.divComments{
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.divComment{
+    width: 18%;
+    outline: 4px solid black;
+    margin: 1% 2.5%;
+    padding: 1%;
+    background-color: white;
+    border-radius: 15px;
+}
+.comments{
+    margin: 1% 2.5%;
+    font-size: 35px;
+}
+.font{
+    margin: 1% 2.5%;
+    text-align: center;
+    font-family: "Caveat", cursive;
+    font-weight: 700;
+    font-size: 50px;
+}
+.italics{
+    margin: 1% 2.5%;
+    font-style: italic;
+}

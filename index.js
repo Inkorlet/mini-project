@@ -19,5 +19,4 @@ fetch('https://jsonplaceholder.typicode.com/users')
             divUsers.appendChild(divUser)
         }
         document.body.appendChild(divUsers)
-        console.log(users)
     })

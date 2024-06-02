@@ -63,7 +63,6 @@ async function foo() {
                     divPost[i].classList.toggle('hide');
                 }
             };
-            console.log(posts)
         })
 }
 foo()

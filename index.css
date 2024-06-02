@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: antiquewhite;
+}
+.dispWrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 27%;
+    height: 250px;
+    justify-content: center;
+    border: 4px solid black;
+    margin: 0 10% 10% 10%;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.imgUser{
+    width: 22%;
+}
+a{
+    margin-top: 10px;
+    font-size: 16px;
+}

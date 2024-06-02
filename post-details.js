@@ -9,7 +9,6 @@ async function foo() {
             divPost.innerHTML = `<p class="font">${post.title}</p><br><b> ${post.body}</b><br>
         <br>ID користувача: ${post.userId}<br>ID поста: ${post.id}`
             document.body.appendChild(divPost)
-            console.log(post)
         })
     let second = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`)
         .then(res => res.json())
@@ -24,11 +23,10 @@ async function foo() {
             for (const comment of comments) {
                 let divComment = document.createElement('div')
                 divComment.className = 'divComment'
-                divComment.innerHTML = `<span>${comment.name}</span><br><br>${comment.body}<br><hr><p class="italics">${comment.email}</p>`
+                divComment.innerHTML = `<span>${comment.name}</span><br><br>${comment.body}<hr><p class="italics">${comment.email}</p>`
                 divComments.appendChild(divComment)
             }
             document.body.appendChild(divComments)
-            console.log(comments)
         })
 }
 foo()
