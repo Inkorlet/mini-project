@@ -9,7 +9,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
             divUser.className = 'user'
             let imgUser = document.createElement('img')
             imgUser.className = 'imgUser'
-            imgUser.src = 'avatar.jpeg'
+            imgUser.src = 'avatar4.jfif'
             divUser.appendChild(imgUser)
             divUser.innerHTML += `<br>Ім'я користувача: ${user.name}<br>ID користувача: ${user.id}<br>`
             let aUsers = document.createElement('a')

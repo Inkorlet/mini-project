@@ -28,7 +28,7 @@ async function foo() {
             divUser.appendChild(divUserDetail)
             let divUserImg = document.createElement('div')
             let imgUser = document.createElement('img')
-            imgUser.src = 'avatar.jpeg'
+            imgUser.src = 'avatar4.jfif'
             divUserImg.appendChild(imgUser)
             divUser.appendChild(divUserImg)
             document.body.appendChild(divUser)

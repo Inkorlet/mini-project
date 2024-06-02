@@ -6,7 +6,7 @@ async function foo() {
             let post = response
             divPost = document.createElement('div')
             divPost.className = 'divPost'
-            divPost.innerHTML = `<h1>${post.title}</h1><br> ${post.body}<br>
+            divPost.innerHTML = `<p class="font">${post.title}</p><br><b> ${post.body}</b><br>
         <br>ID користувача: ${post.userId}<br>ID поста: ${post.id}`
             document.body.appendChild(divPost)
             console.log(post)
@@ -18,12 +18,13 @@ async function foo() {
             let divComments = document.createElement('div')
             divComments.className = 'divComments'
             let pComments = document.createElement('p')
+            pComments.className = 'comments'
             pComments.textContent = `Comments:`
             document.body.appendChild(pComments)
             for (const comment of comments) {
                 let divComment = document.createElement('div')
                 divComment.className = 'divComment'
-                divComment.innerHTML = `<span>${comment.name}</span><br><br>${comment.body}<br><hr>${comment.email}`
+                divComment.innerHTML = `<span>${comment.name}</span><br><br>${comment.body}<br><hr><p class="italics">${comment.email}</p>`
                 divComments.appendChild(divComment)
             }
             document.body.appendChild(divComments)
